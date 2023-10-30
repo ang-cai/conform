@@ -166,39 +166,6 @@ def please_flip_one_pass(caps:list)->list:
 
   return shouts
 
-def run_length_encode(message:str) -> str:
-    ''' Optional Challenge: Run-length Encoding
-       
-        Args:
-        message: a single string comprised of exactly two characters:  'F'  or 'B'
-
-        Return:
-        an encoded string which uses integers to indicate sucessive repetitions of 'F' and 'B'
-
-        Example
-        ------
-        >>>run_length_encode('BFFFFFBFFFF')
-        '1B5F1B4F'
-    '''
-    return None
-
-def run_length_decode(encoded_message:str)-> str:
-    ''' Optional Challenge: Run-length Decoding
-        
-        Args:
-        encoded_message: an encoded string which uses integers to indicate sucessive repetitions of 'F' and 'B'
-
-        Return:
-        a decoded string comprised of exactly two characters: 'F'  or 'B'
-
-        Example
-        ------
-        >>>run_length_decode('1B5F1B4F')
-        'BFFFFFBFFFF'
-    '''
-    return None
-
-
 if __name__ == "__main__":
     # Some exercise 1, 2, & 4 test cases:
     caps_1 = ["F", "F", "B", "B", "B", "F", "B", "B", "B", "F", "F", "B", "F"]
@@ -210,9 +177,9 @@ if __name__ == "__main__":
     caps_5 = ["F", "F", "B", "H", "B", "F", "B", "B", "B", "F", "H", "F", "F"]
     caps_6= ["B", "B", "F", "H", "F", "B", "F", "F", "F", "B", "H", "B", "H"]
 
-    # print(please_flip_original(caps_1))           #Ex 1
-    # print(please_flip_streamlined(caps_1))       #Ex 2
+    print(please_flip_original(caps_1))           #Ex 1
+    print(please_flip_streamlined(caps_1))       #Ex 2
 
-    # print(please_flip_bare(caps_5))             #Ex 3
+    print(please_flip_bare(caps_5))             #Ex 3
 
     print(please_flip_one_pass(caps_1))          #Ex 4
